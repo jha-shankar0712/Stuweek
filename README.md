@@ -1,42 +1,118 @@
 # Stuweek — Student Week
 
-A student productivity workspace built with React, Vite, Express and SQLite. The interface uses a premium matte-black and crimson-red visual system with layered cards, subtle depth and no blue dashboard styling.
+**Plan less. Learn better. Stay consistent.**
 
-## MVP features
-- Account registration and login (JWT + bcrypt)
-- Personal dashboard and profile
-- Study planner with add, complete and delete tasks
-- Focus timer with session tracking
-- Personal notes library
-- Quiz practice (sample questions + score)
-- Flashcards with flip interaction
+Stuweek is a student productivity workspace designed to help students organize their studies, manage tasks, track focus sessions and improve their learning routine — all in one place.
 
-## Requirements
-- Node.js 20+ and npm
-- Windows, macOS or Linux
+🎥 **Project Demo:** [Watch Stuweek on YouTube](https://youtu.be/PUFEcQ60JEI)
 
-## Run locally
-1. Extract the ZIP.
-2. Open the `Stuweek` folder in VS Code.
-3. Open a terminal in this folder and run:
+## 🚀 MVP Features
+
+- **User Authentication:** Register and log in securely using JWT and bcrypt.
+- **Personal Dashboard:** View your study activity and productivity.
+- **Study Planner:** Add, complete and delete study tasks.
+- **Focus Timer:** Track focus sessions and study time.
+- **Notes Library:** Create and manage personal study notes.
+- **Quiz Practice:** Practice sample questions and check your scores.
+- **Flashcards:** Revise topics using interactive flashcards.
+- **My Profile:** Access your personal account information.
+
+## 🛠️ Technology Stack
+
+| Area | Technologies |
+|---|---|
+| Frontend | React.js, Vite, JavaScript, CSS |
+| Backend | Node.js, Express.js |
+| Database | SQLite |
+| Authentication | JWT, bcrypt |
+| API Communication | Axios |
+
+## 📸 Screenshots
+
+Screenshots of the working application will be added here.
+
+<!-- Add actual screenshots inside the screenshots folder -->
+
+## 💻 Run Stuweek Locally
+
+### Prerequisites
+- Node.js 20 or later
+- npm
+- VS Code (recommended)
+
+### Installation
+
+1. Clone this repository:
+
+   ```bash
+   git clone https://github.com/jha-shankar0712/Stuweek.git
+   ```
+
+2. Open the project folder:
+
+   ```bash
+   cd Stuweek
+   ```
+
+3. Install dependencies:
+
    ```bash
    npm run install:all
    ```
-4. Start the app:
+
+4. Start the frontend and backend:
+
    ```bash
    npm run dev
    ```
-5. Open the Vite URL shown in the terminal (normally `http://localhost:5173`).
 
-The API runs on `http://localhost:5000`. SQLite database is created automatically at `server/data/stuweek.db`.
+5. Open the frontend in your browser:
 
-## Demo account
-Create your own account from the Register screen. No pre-filled password is included.
+   `http://localhost:5173`
 
-## Important scope notes
-This is a working MVP foundation. Social networking, live video rooms, AI-generated question papers and operating-system-level app blocking are not implemented. The focus timer works inside the Stuweek page; it cannot force-close or block other desktop/mobile apps from a normal website.
+The backend API runs at:
 
-## Project structure
-- `client/` — React user interface
-- `server/` — Express API, authentication and SQLite data
-- `server/data/` — created automatically for the database
+`http://localhost:5000`
+
+The SQLite database is created automatically inside `server/data/`.
+
+## 📁 Project Structure
+
+```text
+Stuweek/
+├── client/       # React frontend
+├── server/       # Express backend and API
+├── README.md
+├── package.json
+└── .gitignore
+```
+
+## 🎯 Current Development Status
+
+Stuweek is currently being developed as a hackathon MVP.
+
+The current version provides a working foundation for student productivity, including authentication, planning, focus tracking, notes, quizzes and flashcards.
+
+### Future Improvements
+
+- AI-powered study plan generation
+- AI-generated question papers
+- Social learning features
+- Live study rooms
+- Advanced productivity analytics
+
+These are planned improvements, not features currently claimed as implemented.
+
+## ⚠️ Current Limitations
+
+- The focus timer works inside the Stuweek application.
+- It does not block or force-close other desktop or mobile applications.
+- Social networking, live video rooms and AI-generated question papers are not yet implemented.
+
+## 👨‍💻 Project
+
+**Stuweek — Student Week**
+
+A student-focused productivity project built to make studying more organized, manageable and consistent.
+
+**GitHub:** https://github.com/jha-shankar0712/Stuweek
