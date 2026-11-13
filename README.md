@@ -1,118 +1,156 @@
-# Stuweek — Student Week
+# 🌿 Stuweek – Plan Less. Learn Better. Stay Consistent.
 
-**Plan less. Learn better. Stay consistent.**
+**Stuweek** is a student productivity and study management platform designed to help students organize their academic life, manage daily tasks, track study sessions, and improve learning consistency.
 
-Stuweek is a student productivity workspace designed to help students organize their studies, manage tasks, track focus sessions and improve their learning routine — all in one place.
+It brings essential study tools together in one simple and user-friendly platform.
 
-🎥 **Project Demo:** [Watch Stuweek on YouTube](https://youtu.be/PUFEcQ60JEI)
+## 🌐 Live Website
 
-## 🚀 MVP Features
+🚀 **Try Stuweek:**  
+https://stuweek-731w8xw8u-jha-shankar0712.vercel.app/
 
-- **User Authentication:** Register and log in securely using JWT and bcrypt.
-- **Personal Dashboard:** View your study activity and productivity.
-- **Study Planner:** Add, complete and delete study tasks.
-- **Focus Timer:** Track focus sessions and study time.
-- **Notes Library:** Create and manage personal study notes.
-- **Quiz Practice:** Practice sample questions and check your scores.
-- **Flashcards:** Revise topics using interactive flashcards.
-- **My Profile:** Access your personal account information.
+🎥 **Project Demo Video:**  
+https://youtu.be/PUFEcQ60JEI
+
+💻 **GitHub Repository:**  
+https://github.com/jha-shankar0712/Stuweek
+
+## ✨ Key Features
+
+- **User Authentication:** Create an account and securely log in.
+- **Personalized Dashboard:** View your study activity and productivity statistics.
+- **Study Planner:** Organize study tasks and manage your learning schedule.
+- **Focus Timer:** Track focused study sessions and improve consistency.
+- **Notes Library:** Create and manage study notes.
+- **Quiz Practice:** Test your knowledge through interactive quizzes.
+- **Flashcards:** Practice and revise important concepts.
+- **User Profile:** Manage your personal account information.
+- **Responsive Interface:** Access the platform on mobile phones, tablets, and desktops.
 
 ## 🛠️ Technology Stack
 
-| Area | Technologies |
-|---|---|
-| Frontend | React.js, Vite, JavaScript, CSS |
-| Backend | Node.js, Express.js |
-| Database | SQLite |
-| Authentication | JWT, bcrypt |
-| API Communication | Axios |
+**Frontend**
+- React.js
+- Vite
+- JavaScript
+- CSS
 
-## 📸 Screenshots
+**Backend**
+- Node.js
+- Express.js
+- REST API
 
-Screenshots of the working application will be added here.
+**Database**
+- SQLite
+- Better-SQLite3
 
-<!-- Add actual screenshots inside the screenshots folder -->
+**Deployment**
+- Vercel – Frontend Hosting
+- Render – Backend Hosting
+- GitHub – Source Code Management
 
-## 💻 Run Stuweek Locally
-
-### Prerequisites
-- Node.js 20 or later
-- npm
-- VS Code (recommended)
-
-### Installation
-
-1. Clone this repository:
-
-   ```bash
-   git clone https://github.com/jha-shankar0712/Stuweek.git
-   ```
-
-2. Open the project folder:
-
-   ```bash
-   cd Stuweek
-   ```
-
-3. Install dependencies:
-
-   ```bash
-   npm run install:all
-   ```
-
-4. Start the frontend and backend:
-
-   ```bash
-   npm run dev
-   ```
-
-5. Open the frontend in your browser:
-
-   `http://localhost:5173`
-
-The backend API runs at:
-
-`http://localhost:5000`
-
-The SQLite database is created automatically inside `server/data/`.
-
-## 📁 Project Structure
+## 🏗️ Project Structure
 
 ```text
 Stuweek/
-├── client/       # React frontend
-├── server/       # Express backend and API
-├── README.md
-├── package.json
-└── .gitignore
+│
+├── client/
+│   ├── src/
+│   ├── public/
+│   └── package.json
+│
+├── server/
+│   ├── src/
+│   ├── data/
+│   └── package.json
+│
+└── README.md
 ```
 
-## 🎯 Current Development Status
+## ⚙️ Run Locally
 
-Stuweek is currently being developed as a hackathon MVP.
+### 1. Clone the Repository
 
-The current version provides a working foundation for student productivity, including authentication, planning, focus tracking, notes, quizzes and flashcards.
+```bash
+git clone https://github.com/jha-shankar0712/Stuweek.git
+cd Stuweek
+```
 
-### Future Improvements
+### 2. Start the Backend
 
-- AI-powered study plan generation
-- AI-generated question papers
-- Social learning features
-- Live study rooms
-- Advanced productivity analytics
+```bash
+cd server
+npm install
+```
 
-These are planned improvements, not features currently claimed as implemented.
+Configure the backend environment variables:
 
-## ⚠️ Current Limitations
+```env
+PORT=5000
+CLIENT_ORIGIN=http://localhost:5173
+JWT_SECRET=your_private_random_secret
+```
 
-- The focus timer works inside the Stuweek application.
-- It does not block or force-close other desktop or mobile applications.
-- Social networking, live video rooms and AI-generated question papers are not yet implemented.
+Start the backend:
 
-## 👨‍💻 Project
+```bash
+npm start
+```
 
-**Stuweek — Student Week**
+### 3. Start the Frontend
 
-A student-focused productivity project built to make studying more organized, manageable and consistent.
+Open a new terminal:
 
-**GitHub:** https://github.com/jha-shankar0712/Stuweek
+```bash
+cd client
+npm install
+```
+
+Create a `.env` file inside the client folder:
+
+```env
+VITE_API_URL=http://localhost:5000/api
+```
+
+Start the frontend:
+
+```bash
+npm run dev
+```
+
+Open the local URL displayed by Vite in your browser.
+
+## 🎯 Project Objective
+
+The main objective of Stuweek is to make student life more organized and productive by combining study planning, task management, focus tracking, and revision tools in one platform.
+
+Instead of switching between multiple applications, students can manage their daily learning activities from a single workspace.
+
+## 🚀 Deployment
+
+- Frontend: Vercel
+- Backend: Render
+- Repository: GitHub
+
+**Live Application:**  
+https://stuweek-731w8xw8u-jha-shankar0712.vercel.app/
+
+## 🔮 Future Improvements
+
+- Enhanced study analytics and progress reports.
+- Personalized learning recommendations.
+- Improved mobile experience.
+- More quiz categories and revision tools.
+- Additional productivity features.
+
+## 👨‍💻 Development
+
+Stuweek is a full-stack student productivity project developed as a practical application of frontend development, backend development, API integration, database management, and deployment.
+
+## ⭐ Support
+
+If you find this project useful, consider giving the repository a ⭐ on GitHub!
+
+---
+
+**Stuweek – Plan Less. Learn Better. Stay Consistent.**
